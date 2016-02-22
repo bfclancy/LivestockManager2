@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    style="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/background"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:useDefaultMargins="false"
+        android:clickable="false">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:text="New Income"
+            android:drawableTop="@drawable/newincome"
+            android:id="@+id/buttonNewIncomeActivity"
+            android:background="@drawable/buttonshape"
+            android:typeface="serif"
+            android:layout_alignTop="@+id/buttonViewExpenditure" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/newexpenditure"
+            android:background="@drawable/buttonshape"
+            android:text="New Expenditure"
+            android:id="@+id/buttonNewExpenditureActivity"
+            android:typeface="serif"
+            android:layout_alignTop="@+id/buttonViewIncome"
+            android:layout_alignEnd="@+id/buttonProfitLoss" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:text="View Income"
+            android:background="@drawable/buttonshape"
+            android:drawableTop="@drawable/viewincome"
+            android:id="@+id/buttonViewIncome"
+            android:typeface="serif"
+            android:layout_below="@+id/buttonViewExpenditure"
+            android:layout_alignStart="@+id/buttonViewExpenditure" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:text="View Expenditure"
+            android:background="@drawable/buttonshape"
+            android:drawableTop="@drawable/viewexpenditure"
+            android:id="@+id/buttonViewExpenditure"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:typeface="serif"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:text="Balance Sheet"
+            android:background="@drawable/buttonshape"
+            android:drawableTop="@drawable/balancesheet"
+            android:id="@+id/buttonBalanceSheet"
+            android:typeface="serif"
+            android:layout_below="@+id/buttonNewExpenditureActivity"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</LinearLayout>

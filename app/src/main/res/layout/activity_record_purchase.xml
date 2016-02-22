@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        style="@style/AppTheme">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.example.asus.myapplication.AddIncomeActivity"
+            android:id="@+id/AnimalSearchActivity">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/textSearchHeader"
+                android:id="@+id/textView5"
+                android:typeface="serif"
+                android:textColor="#ddf9ff" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/spinner"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date of Birth"
+                android:id="@+id/textViewAnimalDOB"
+                android:layout_below="@+id/spinner"
+                android:typeface="serif"
+                android:textColor="#FFDDF9FF" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDOB"
+                android:layout_below="@+id/textViewAnimalDOB"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:background="@drawable/edittextshape"
+                android:typeface="serif"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date Last TB Test"
+                android:id="@+id/textViewTB"
+                android:layout_below="@+id/editTextDOB"
+                android:typeface="serif"
+                android:textColor="#FFDDF9FF" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:id="@+id/editTextTB"
+                android:layout_below="@+id/textViewTB"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:background="@drawable/edittextshape"
+                android:typeface="serif"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date Last BR Test"
+                android:id="@+id/textViewBR"
+                android:layout_below="@+id/editTextTB"
+                android:typeface="serif"
+                android:textColor="#FFDDF9FF" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:id="@+id/editTextBR"
+                android:layout_below="@+id/textViewBR"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:background="@drawable/edittextshape"
+                android:typeface="serif"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date Moved In"
+                android:id="@+id/textViewDMI"
+                android:layout_below="@+id/editTextBR"
+                android:typeface="serif"
+                android:textColor="#FFDDF9FF" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:height="40dp"
+                android:layout_margin="5dp"
+                android:id="@+id/editTextDMI"
+                android:layout_below="@+id/textViewDMI"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:background="@drawable/edittextshape"
+                android:typeface="serif"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:id="@+id/buttonEdit"
+                android:layout_below="@+id/editTextDMI"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cancel"
+                android:id="@+id/button2"
+                android:layout_below="@+id/buttonEdit"
+                android:background="@drawable/buttonshape"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

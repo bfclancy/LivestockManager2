@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.livestockmanager" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.example.googlemaps.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.googlemaps.permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" >
+    </uses-feature>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Livestock Manager"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartUpActivity"
+            android:label="Livestock Manager" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
+            <intent-filter>
+                <action android:name="android.intent.action.Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddAnimalActivity"
+            android:label="@string/title_activity_add_animal" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddAnimalActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddExpenditureActivity"
+            android:label="@string/title_activity_add_expenditure" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddExpenditureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.asus.livestockmanager.FinanceActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddIncomeActivity"
+            android:label="@string/title_activity_add_income" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddIncomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddNewAppointmentActivity"
+            android:label="@string/title_activity_add_new_appointment" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddNewAppointmentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnimalPregnancyActivity"
+            android:label="@string/title_activity_animal_pregnancy" >
+            <intent-filter>
+                <action android:name="android.intent.action.AnimalPregnancyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnimalSearchActivity"
+            android:label="@string/title_activity_animal_search" >
+            <intent-filter>
+                <action android:name="android.intent.action.AnimalSearchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FinanceActivity"
+            android:label="@string/title_activity_finance" >
+            <intent-filter>
+                <action android:name="android.intent.action.FinanceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LivestockListActivity"
+            android:label="@string/title_activity_livestock_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.LivestockListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManageLivestockActivity"
+            android:label="@string/title_activity_manage_livestock" >
+            <intent-filter>
+                <action android:name="android.intent.action.ManageLivestockActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SyncActivity"
+            android:label="@string/title_activity_sync" >
+            <intent-filter>
+                <action android:name="android.intent.action.SyncActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportsActivity"
+            android:label="@string/title_activity_reports" >
+            <intent-filter>
+                <action android:name="android.intent.action.ReportsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TasksActivity"
+            android:label="@string/title_activity_tasks" >
+            <intent-filter>
+                <action android:name="android.intent.action.TasksActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewAnimalDetailsActivity"
+            android:label="@string/title_activity_view_animal_details" >
+            <intent-filter>
+                <action android:name="android.intent.action.ViewAnimalDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewIncomeActivity"
+            android:label="@string/title_activity_view_income" >
+            <intent-filter>
+                <action android:name="android.intent.action.ViewIncomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AndroidDatabaseManager"
+            android:label="@string/title_activity_view_income" >
+            <intent-filter>
+                <action android:name="android.intent.action.AndroidDatabaseManager" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecordPurchaseActivity"
+            android:label="@string/title_activity_record_purchase"
+            android:parentActivityName=".ManageLivestockActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.ManageLivestockActivity" />
+        </activity>
+        <activity
+            android:name=".RecordAnimalSale"
+            android:label="@string/title_activity_record_animal_sale" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.ManageLivestockActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RecordAnimalSale" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewExpenditureActivity"
+            android:label="@string/title_activity_view_expenditure" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.FinanceActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.ViewExpenditureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BalanceSheetActivity"
+            android:label="@string/title_activity_balance_sheet" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.FinanceActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.BalanceSheetActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewAppointmentsActivity"
+            android:label="@string/title_activity_view_appointments"
+            android:parentActivityName=".TasksActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.TasksActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.ViewAppointmentsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReminderActivity"
+            android:label="@string/title_activity_reminder" >
+            <intent-filter>
+                <action android:name="android.intent.action.ReminderActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".AlarmIntentService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name=".AppointmentReminderReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <activity
+            android:name=".BeefPriceActivity"
+            android:label="@string/title_activity_beef_price" >
+            <intent-filter>
+                <action android:name="android.intent.action.BeefPriceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".VetMapActivity"
+            android:label="@string/title_activity_vet_map" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.ReportsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VetMapActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecordTestResultsActivity"
+            android:label="@string/title_activity_record_test_results"
+            android:parentActivityName=".TasksActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.TasksActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RecordTestResultsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BeefPriceChartActivity"
+            android:label="@string/title_activity_beef_price_chart"
+            android:parentActivityName=".ReportsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.ReportsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.BeefPriceChartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpendingPerHeadChartActivity"
+            android:label="@string/title_activity_spending_per_head_chart"
+            android:parentActivityName=".ReportsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.ReportsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SpendingPerHeadChartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name=".IncomeVExpenditureChartActivity"
+            android:label="@string/title_activity_income_vexpenditure_chart"
+            android:parentActivityName=".ReportsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.asus.livestockmanager.ReportsActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.IncomeVExpenditureChartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

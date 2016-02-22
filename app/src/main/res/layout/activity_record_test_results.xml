@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Linear1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.livestockmanager.RecordTestResultsActivity">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Linear2"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+            <!--android:paddingBottom="@dimen/activity_vertical_margin">-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="New Text"-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_weight="0.69" />-->
+
+        <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Pass"-->
+            <!--android:id="@+id/checkBoxPass" />-->
+
+        <!--<CheckBox-->
+            <!--android:layout_width="108dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Fail"-->
+            <!--android:id="@+id/checkBoxFail"-->
+            <!--android:layout_gravity="right" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

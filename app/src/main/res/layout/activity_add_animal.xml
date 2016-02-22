@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.asus.livestockmanager.AddAnimalActivity"
+        android:id="@+id/layoutAddAnimal">
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tag Number"
+            android:id="@+id/textViewTagNumber"
+            android:layout_margin="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNewTagNumber"
+            android:layout_margin="20dp"
+            android:layout_below="@id/textViewTagNumber"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="20dp"
+            android:text="Gender"
+            android:id="@+id/textViewNewGender"
+            android:layout_below="@+id/editTextNewTagNumber" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerAddNewAnimalGender"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/textViewNewGender" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date of Birth"
+            android:id="@+id/textViewAddNewAnimalDOB"
+            android:layout_below="@+id/spinnerAddNewAnimalGender" />
+
+        <DatePicker
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePickerNewDOB"
+            android:layout_below="@+id/textViewAddNewAnimalDOB"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date Last TB Test"
+            android:id="@+id/textViewDateLastTBTest"
+            android:layout_below="@+id/datePickerNewDOB"
+            android:layout_margin="20dp"/>
+
+        <DatePicker
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePickerAddNewLastTBTest"
+            android:layout_below="@+id/textViewDateLastTBTest"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date Last BR test"
+            android:id="@+id/textViewLastBRTest"
+            android:layout_below="@+id/datePickerAddNewLastTBTest"
+            android:layout_margin="20dp" />
+
+        <DatePicker
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePickerAddNewLastBRTest"
+            android:layout_below="@+id/textViewLastBRTest"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date Moved In"
+            android:id="@+id/textViewDateMovedIn"
+            android:layout_below="@+id/datePickerAddNewLastBRTest"
+            android:layout_margin="20dp" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePickerAddNewDateMovedIn"
+            android:layout_below="@+id/textViewDateMovedIn"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sire"
+            android:id="@+id/textViewSire"
+            android:layout_below="@+id/datePickerAddNewDateMovedIn"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextSire"
+            android:layout_below="@+id/textViewSire"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dam tag Number"
+            android:id="@+id/textViewDam"
+            android:layout_below="@id/editTextSire"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextDam"
+            android:layout_below="@+id/textViewDam"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sire Breed"
+            android:id="@+id/textViewSireBreed"
+            android:layout_below="@id/editTextDam"
+            android:layout_margin="20dp" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSireBreed"
+            android:layout_below="@+id/textViewSireBreed"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Price(Leave blank if own calf)"
+            android:id="@+id/textViewPrice"
+            android:layout_below="@id/spinnerSireBreed"
+            android:layout_margin="20dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPrice"
+            android:layout_below="@+id/textViewPrice"
+            android:layout_margin="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Animal"
+            android:onClick="addNewAnimal"
+            android:id="@+id/buttonAddAnimal"
+            android:layout_below="@id/editTextPrice"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:onClick="cancelAddNewAnimal"
+            android:id="@+id/buttonCancel"
+            android:layout_below="@+id/buttonAddAnimal"
+            android:layout_margin="20dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

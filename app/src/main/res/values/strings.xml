@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">LivestockManager</string>
+    <string name="title_activity_register">Register</string>
+
+        //String values for home screen
+        <string name="button_scanID">Scan ID Tag</string>
+        <string name="button_searchAnimal">Search</string>
+        <string name="buttonFinance">Finance</string>
+        <string name="button_tasks">Tasks</string>
+        <string name="button_exit">Exit</string>
+        <string name ="button_manageLivestock">Livestock</string>
+        <string name ="button_veterinarian">Veterinarian</string>
+        <string name ="buttonReports">Reports</string>
+
+        //Strings for Search For Animal Activity
+        <string name="title_activity_animal_search">Animal Search</string>
+        <string name="AnimalSearchHeader">Select Tag Number</string>
+        <string name="buttonSearchAnimal">Search</string>
+        <string name="buttonSearchAnimalCancel">Cancel</string>
+        <string name="textIdNumber">Enter ID Number</string>
+        <string name="textBreed">Choose Breed</string>
+        <string name="textGender">Choose Gender</string>
+        <string name="textYearBorn">Select Year Born</string>
+        <string name="textSearchHeader">Select Tag Number</string>
+        <string name="radioButtonSearchGenderMale">Male</string>
+        <string name="radioButtonSearchGenderFemale">Female</string>
+
+        //Strings for Add Animal Activity
+        <string name="title_activity_add_animal">Add Animal</string>
+        <string name="textViewNewAnimalDOB">DOB</string>
+        <string name="textViewNewAnimalGender">Gender</string>
+        <string name="textViewNewAnimalTagNumber">Tag Number</string>
+        <string name="textViewAddAnimalHeader">Enter Animal Details</string>
+        <string name="textViewLastTBTest">Last TB Test</string>
+        <string name="textViewLastBRTest">Last BR Test</string>
+        <string name="textViewDateMovedIn">Date Moved In</string>
+        <string name="textViewDamTagNumber">Dam Tag Number</string>
+        <string name="textViewSire">Sire</string>
+        <string name="textViewSireBreed">Sire Breed</string>
+        <string name="buttonConfirmAddNewAnimalDetails">Add New Animal</string>
+        <string name="buttonCancelAddNewAnimalDetails">Cancel</string>
+        <string name="buttonAddAnimal">Add New Animal</string>
+        <string-array name = "cattle_breeds">
+            <item>LM</item>
+            <item>BB</item>
+            <item>CH</item>
+            <item>SH</item>
+            <item>BA</item>
+            <item>SI</item>
+            <item>SA</item>
+            <item>HE</item>
+            <item>PT</item>
+            <item>AA</item>
+            <item>AU</item>
+        </string-array>
+        <string-array name= "gender">
+            <item>Male</item>
+            <item>Female</item>
+        </string-array>
+
+    <string-array name= "expenditureTypes">
+        <item>Feed</item>
+        <item>Fertiliser</item>
+        <item>Medical</item>
+        <item>Plant and Machinery</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+        //String values for add income activity
+        <string name="title_activity_add_income">Add Income</string>
+        <string name="textViewAddIncomeActivityHeader">Enter Income Item Details</string>
+        <string name="textViewIncomeAmount">Amount</string>
+        <string name="textViewIncomeDate">Date</string>
+        <string name="textViewIncomeDescription">Description</string>
+        <string name="buttonCancelNewIncome">Cancel</string>
+        <string name="buttonConfirmNewIncome">Confirm</string>
+
+        //String values for Scanning activity
+        <string name="title_activity_scan_idtag">Scan ID Tag</string>
+        <string name="buttonScanIDTag">Scan Tag</string>
+
+        //String values for Login activity
+        <string name="title_activity_login">Login</string>
+        <string name="title_activity_sign_up">Sign Up</string>
+
+        //String values for sign up activity
+        <string name="textViewSignUpHeader">Please Enter Your Personal Details</string>
+        <string name="textViewFirstName">First Name</string>
+        <string name="textViewSurname">Surname</string>
+        <string name="textViewAddress1">Address</string>
+        <string name="textViewAddress2">Address 2</string>
+        <string name="textViewCounty">County</string>
+        <string name="textViewHerdNumber">Herd Number</string>
+        <string name="buttonSignUp">Sign Up</string>
+        <string name="textViewEmail">Email</string>
+        <string name="textViewPassword">Password</string>
+        <string-array name= "counties">
+            <item>Carlow</item>
+            <item>Cavan</item>
+            <item>Clare</item>
+            <item>Cork</item>
+            <item>Donegal</item>
+            <item>Dublin</item>
+            <item>Galway</item>
+            <item>Kerry</item>
+            <item>Kildare</item>
+            <item>Kilkenny</item>
+            <item>Laois</item>
+            <item>Leitrim</item>
+            <item>Limerick</item>
+            <item>Longford</item>
+            <item>Louth</item>
+            <item>Mayo</item>
+            <item>Meath</item>
+            <item>Monaghan</item>
+            <item>Offaly</item>
+            <item>Roscommon</item>
+            <item>Sligo</item>
+            <item>Tipperary</item>
+            <item>Waterford</item>
+            <item>Westmeath</item>
+            <item>Wexford</item>
+            <item>Wicklow</item>
+        </string-array>
+        <string name="title_activity_manage_livestock">Manage Livestock</string>
+
+        <string name="welcome">Welcome to the Livestock Manger App!</string>
+
+        //STRING VALUES FOR MANAGE LIVESTOCK SCREEN
+        <string name="buttonAddNewAnimal">Add New Animal</string>
+        <string name="buttonSearchForAnimal">Search For Animal</string>
+        <string name="buttonRecordAnimalPurchase">Record Purchase</string>
+        <string name="buttonRecordAnimalSale">Record Sale</string>
+        <string name="buttonRecordAnimalBirth">Record Birth</string>
+        <string name="buttonRecordAnimalDeath">Record Death</string>
+
+
+        //STRING VALUES FOR SALES
+        <string name="title_activity_animal_sale">Record Sale</string>
+
+
+        //STRING VALUES FOR PURCHASES
+        <string name="title_activity_animal_purchase">Record Purchase</string>
+
+        //string values for community screen
+        <string name="buttonCommunity">Community</string>
+
+
+        //STRING VALUES FOR SCAN ID TAG SCREEN
+        <string name="buttonRemoveAnimal">Remove Animal</string>
+        <string name="buttonTestResult">Test Result</string>
+        <string name="buttonEditAnimal">Edit Details</string>
+        <string name="buttonSale">Animal Sold</string>
+        <string name="buttonPurchase">Animal Purchased</string>
+        <string name="buttonIllness">Ill Animal</string>
+        <string name="buttonViewDetails">View Animal Details</string>
+        <string name="buttonPregnancy">Add Pregnancy</string>
+
+        //STRING VALUES FOR REMOVE ACTIVITY
+        <string name="title_activity_remove_animal">Remove Animal</string>
+
+        //STRING VALUES FOR VIEW DETAILS ACTIVITY
+        <string name="title_activity_view_animal_details">View Animal Details</string>
+
+        //STRING VALUES FOR EDIT DETAILS ACTIVITY
+        <string name="title_activity_edit_animal_details">Edit Animal Details</string>
+
+        //STRING VALUES FOR ANIMAL ILLNESS ACTIVITY
+        <string name="title_activity_animal_illness">Animal Illness</string>
+
+        //STRING VALUES FOR TEST RESULT ACTIVITY
+        <string name="title_activity_animal_test_result">Animal Test Results</string>
+
+        //STRING VALUES FOR ANIMAL PREGNANCY ACTIVITY
+        <string name="title_activity_animal_pregnancy">Animal Pregnancy</string>
+        <string name="buttonAddNewUser">Add New User</string>
+        <string name="title_activity_view_users">ViewUsers</string>
+        <string name="buttonViewUsers">View Users</string>
+
+
+        //STRING VALUES FOR TASKS SCREEN
+        <string name="title_activity_tasks">Tasks Activity</string>
+        <string name="buttonAddVetVisit">New Vet Appointment</string>
+        <string name="buttonViewVetVisits">View Vet Appointments</string>
+        <string name="buttonRemedies">Remedies</string>
+        <string name="buttonTestResults">Test Results</string>
+        <string name="title_activity_new_vet_appointment">NewVetAppointment</string>
+        <string name="textViewVetName">Select Vet</string>
+        <string name="textViewTime">Time</string>
+        <string name="textViewDate">Date</string>
+        <string name="textViewNewVetAppointmentHeader">ENTER NEW VET APPOINTMENT DETAILS</string>
+        <string name="buttonCreateAppointment">Create</string>
+        <string name="buttonCancelVetAppointment">Cancel</string>
+        <string name="spinnerVetNames">Select Vet</string>
+        <string name="title_activity_add_vet">AddVetActivity</string>
+        <string name="textViewAddVetName">Name</string>
+        <string name="textViewAddVetAddress">Address</string>
+        <string name="textViewAddVetPhone">Phone</string>
+        <string name="buttonAddVetCancel">Cancel</string>
+        <string name="buttonAddVet">Add</string>
+        <string name="buttonAddVetDetails">Add Vet Contact Details</string>
+        <string name="title_activity_view_vet_appointments">ViewVetAppointmentsActivity</string>
+        <string name="title_activity_livestock_list">LivestockListActivity</string>
+        <string name="title_activity_contact_vet">Contact Vet</string>
+        <string name="ContactVet">Contact Vet</string>
+        <string name="title_activity_finance">FinanceActivity</string>
+
+        //STRING VALUES FOR FINANCE SCREEN
+        <string name="buttonNewIncomeActivity">New Income</string>
+        <string name="buttonNewExpenditureActivity">New Expenditure</string>
+        <string name="buttonViewIncome">View Income</string>
+        <string name="buttonViewExpenditure">View Expenditure</string>
+        <string name="buttonProfitLoss">Profit/Loss</string>
+        <string name="title_activity_view_income">ViewIncomeActivity</string>
+        <string name="buttonSync">Sync</string>
+
+        //STRING VALUES FOR MENU
+        <string name="action_settings">Settings</string>
+        <string name="action_livestock">Livestock</string>
+        <string name="action_tasks">Tasks</string>
+        <string name="action_finance">Finance</string>
+        <string name="action_scan">Scan Tag</string>
+        <string name="action_sync">Sync</string>
+        <string name="title_activity_startup">StartupActivity</string>
+        <string name="title_activity_sync">SyncActivity</string>
+
+        <string name="hello_world">Hello world!</string>
+        <string name="title_activity_task">TaskActivity</string>
+        <string name="title_activity_reports">ReportsActivity</string>
+        <string name="title_activity_add_expenditure">AddExpenditureActivity</string>
+
+
+        //STRING VALUES FOR ADD EXPENDITURE ACTIVITY
+
+        <string name="textViewAddExpenditureActivityHeader">Enter Expenditure Details</string>
+        <string name="textViewExpenditureAmount">Amount</string>
+        <string name="textViewExpenditureDate">Date</string>
+        <string name="textViewExpenditureDescription">Description</string>
+        <string name="buttonCancelNewExpenditure">Cancel</string>
+        <string name="buttonConfirmNewExpenditure">Confirm</string>
+
+        //STRING VALUES FOR ADD PREGNANCY ACTIVITY
+
+        <string name="textViewAddPregnancyActivityHeader">Enter Pregnancy Details</string>
+        <string name="textViewPregnantDamTagNumber">Dam Tag Number</string>
+        <string name="textViewPregnancyDate">Date</string>
+        <string name="buttonCancelNewPregnancy">Cancel</string>
+        <string name="buttonConfirmNewPregnancy">Confirm</string>
+        <string name="title_activity_view_appointments">ViewAppointments</string>
+        <string name="title_activity_add_remedy_administration">AddRemedyAdministrationActivity</string>
+
+
+
+        <string name="title_activity_add_new_appointment">AddNewAppointment</string>
+        <string name="title_activity_main">MainActivity</string>
+        <string name="title_activity_start_up">StartUpActivity</string>
+        <string name="title_activity_record_purchase">RecordPurchaseActivity</string>
+        <string name="title_activity_record_animal_sale">RecordAnimalSale</string>
+        <string name="title_activity_view_expenditure">ViewExpenditureActivity</string>
+        <string name="title_activity_balance_sheet">BalanceSheetActivity</string>
+
+    //FORM VALIDATION STRINGS
+    <string name="zvalidations_not_positive_integer">Field should be positive integer</string>
+    <string name="zvalidations_empty">Field could not be empty</string>
+    <string name="zvalidations_not_in_range">Field should be between %1$d and %2$d</string>
+    <string name="zvalidations_not_email">Value is not valid email address</string>
+    <string name="zvalidations_not_password">Value is not valid password, must be at least 8 characters long, contain one uppercase and one lowercase letter, one number and one special character.</string>
+    <string name="zvalidations_not_tag_number">Value is not valid tag number, must begin with IE and be followed by 11 numeric characters.</string>
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="title_activity_bar_plot_example">BarPlotExampleActivity</string>
+    <string name="title_activity_beef_price">BeefPriceActivity</string>
+    <string name="title_activity_vet_map">Map</string>
+
+    <string name="google_maps_key">AIzaSyC8c48LnzSiydSXl21cTZa_PCtKid37UL0</string>
+    <string name="title_activity_record_test_results">RecordTestResults</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_beef_price_chart">BeefPriceChartActivity</string>
+    <string name="title_activity_spending_per_head_chart">SpendingPerHeadChartActivity</string>
+    <string name="title_activity_income_vexpenditure_chart">IncomeVExpenditureChartActivity</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayTagNumber"
+        android:text="Tag Number"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayBreed"
+        android:text="Breed"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayGender"
+        android:text="Gender"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayDOB"
+        android:text="DOB"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayTB"
+        android:text="TB"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayBR"
+        android:text="BR"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:id="@+id/textDisplayDateMoved"
+        android:text="Date Moved"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:background="@drawable/edittextshape"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDisplayPP"
+        android:text="PP"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDisplaySP"
+        android:background="@drawable/edittextshape"
+        android:text="SP"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:background="@drawable/edittextshape"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDisplayWeight"
+        android:text="Weight"
+        android:gravity="center"/>
+
+</LinearLayout>
